@@ -1,0 +1,8 @@
+{
+  "Id":"int:Key",
+  "Code":"string:Required, StringLength(24)",
+  "RegistrantId":"int",
+  "Ballot":"string",
+  "BallotCast":"bool",
+  "DateCreated":"DateTime:Required"
+}

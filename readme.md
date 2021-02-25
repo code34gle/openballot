@@ -2,9 +2,9 @@
 
 Open Ballot is an open source voting platform.
 
-The system allows for citizens to vote using their smart-phones.
+The system allows for citizens to vote suing their smart-phones.
 
-At first glance, this may sound like madness, but this system is designed to be more secure, more transparent and far more difficult to defraud than any system currently in existance.
+At first glance, this may sound like madness, but this system is designed to be fare more secure, far more transparent and far more difficult to defraud than any system currently in existance.
 
 The first level of proof in this endeavor is that it is Open Source.  If any government or citizen, local or otherwise wanted to view the inner workings of the system - they are more than welcome to do so.
 
@@ -54,7 +54,7 @@ Open Ballot consists of two server domains working in concert.
 * **Registration Server**
 * **Ballot Server**
 
-The **Registration Server** operates in the time period before the election.  The server also serves to control the election environment.  (See Procedures)
+The **Registration Server** operates in the time period before the election.  The server also serves to control the election environment.  (See Proceedures)
 
 The **Ballot Server** is active on election day from a start time to an end time.  During this time, the server accepts votes being cast by the **Participants**.
 
@@ -86,9 +86,9 @@ The **Local Client** runs on devices in local precincts.  These machines can hav
 
 1. ALL Traffic from the Mobile App to the **Ballot Server** is encrypted over https AND the Ballot itself is AES encrypted with the personal key of the **Participant**.
 
-1. The **Ballot Server** takes the Ballot and matches the **RegistrantId** to the Registrant record.  At this point, the Ballot is Decrypted and the vote counted.
+1. The **Ballot Server** takes the Ballot and matches the **RegistrantId** to the Registrant record.  At this point, the Ballot is Decrypted and the votes counted.
 
-1. The **Ballot Server** responds with the ID of the cast Ballot as a Receipt, which is stored on the Mobile Client.  At any time, the **Participant** can query their Ballot from the server and view the *Cast Ballot* and compare it to their local copy.
+1. The **Ballot Server** responds with the ID of the cast Ballot as a Receipt, which is stored on the Mobile Client.  At any time, the **Participant** can query their Ballot from the server and view the *Cast Ballot* in full.
 
 
 ----
@@ -99,7 +99,7 @@ The **Local Client** runs on devices in local precincts.  These machines can hav
 The Individual Voter.  They **MUST** be registered and they must validate their voting status before election day in order to be able to vote.
 
 ### Registration Clerk
-These are local governmental officials that help a citizen register to vote.  They must verify the voter's information on the registration server and either provide an account for the individual to log into, or (if they do not have a smartphone) they will can use the local machines at their voting location by scanning their driver's license.
+Thesse are local governmental officials that help a citizen register to vote.  They must verify the voter's information
 
 
 ### Observer
@@ -111,7 +111,7 @@ Any Machine that is disconnected in any way, during the election cannot be recon
 
 
 ### PollWorker
-This role allows a local machine to create a new local voting session by manning a machine that scans a driver's license.
+This role allows a local machine to switch sessions - and that's it.
 
 ----
 
@@ -127,18 +127,10 @@ This role allows a local machine to create a new local voting session by manning
 
 The procedures for an Election rely on the Legal statutes outlined by the constitution and the legislators.
 
-1. All Software must be installed fresh on the **Local Clients** one month prior to an election.  The version of the software being installed must record the **code hash** before **AND AFTER** the election to prove that the machines were not tampered with. 
+1. All Software must be installed fresh on the **Local Clients** one month prior to an election.  
 
-1. All Election Machines must be connected the day before the election using a Private VPN **AND MUST MAINTAIN THEIR CONNECTION** throughout the election.  Any machine that loses its connection cannot be reconnected.
+1. All Election Machines must be connected the day before the election **AND MAINTAIN THEIR CONNECTION** throughout the election.  Any machine that loses its connection cannot be reconnected.
 
 1. The day before the election, the **Vote Servers** must be turned on and connected to the **Registration Server**.  They will go active on a specific time.
 
-1. The Registration Server and the Voting Server must be programmed to refuse connections from each other until **AFTER** the allowed voting period has passed.
-
-1. When polling is closed, the **Tabulation Process** begins.  This allows for a connection between the **Registration Server** and the **Voting Server** for a single process - the tabulation.  If the process is interrupted in any way, then the results table will be dropped and reset for another run.
-
-During this time, the vote is matched to each vother record, the ballot is decrypted using the voter's key and the ballot results counted.
-
-1. The final results are copied to a local file that can be served via https: to reporting agencies, news outlets, observers, etc.
-
-1. The tabulation database is then dumped to a file that is to be backed-up and archived for a period defined by legal statute.
+1. 

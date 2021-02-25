@@ -1,0 +1,6 @@
+{
+  "Id":"int:Key",
+  "Text":"string:Required, StringLength(2000)",
+  "Yes":"bool",
+  "No":"bool"  
+}

@@ -1,0 +1,8 @@
+{
+  "Id":"int:Key",
+  "Mode":"int:Required,StringLength(16)",
+  "ElectionStart":"DateTime",
+  "ElectionEnd":"DateTime",
+  "DateUpdated":"DateTime",
+  "UpdatedBy":"string"
+}

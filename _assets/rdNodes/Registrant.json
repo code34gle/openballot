@@ -1,0 +1,25 @@
+{
+  "Id":"int:Key",
+  "EncKey":"string:Required, StringLength(256)",
+  "Code":"string:Required, StringLength(24)",
+
+  "FirstName":"string:Required, StringLength(32)",
+  "MiddleName":"string:StringLength(32)",
+  "LastName":"string:Required, StringLength(32)",
+  "Suffix":"string:StringLength(16)",
+
+  "DOB":"DateTime:Required",
+  "SSN":"string:StringLength(16)",
+  "StateIdNumber":"string:StringLength(16)",
+
+  "Street1":"string:Required,StringLength(32)",
+  "Street2":"string:StringLength(32)",
+  "City":"string:Required,StringLength(32)",
+  "StateCode":"string:Required,StringLength(2)",
+  "PostalCode":"string:Required,StringLength(10)",
+
+  "DateCreated":"DateTime:Required",
+  "DateUpdated":"DateTime",
+  "DateVerified":"DateTime"
+
+}

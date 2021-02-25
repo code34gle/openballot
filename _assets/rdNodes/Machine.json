@@ -1,0 +1,11 @@
+{
+  "Id":"int:Key",
+  "MAC_Address":"string:Required, StringLength(64)",
+  "IP_Address":"string:Required, StringLength(32)",
+  "District":"string:Required, StringLength(16)",
+  "Precinct":"string:Required, StringLength(16)",
+  "Status":"string:Required, StringLength(16)",
+  "IsActive":"string:Required, StringLength(16)",
+  "DateUpdated":"DateTime",
+  "UpdatedBy":"string"
+}

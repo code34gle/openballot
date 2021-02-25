@@ -1,0 +1,7 @@
+{
+  "Id":"int:Key",
+  "UserAccountId":"int",
+  "RoleId":"int",
+  "UserAccount":"UserAccount",
+  "Role":"Role"
+}

@@ -1,0 +1,14 @@
+{
+  "Id":"int:Key",
+  "OfficeId":"int",
+  "FirstName":"string:Required,StringLength(32)",
+  "MiddleName":"string:StringLength(32)",
+  "LastName":"string:Required,StringLength(32)",
+  "Party":"string:Required,StringLength(32)",
+  "Statement":"string:Required,StringLength(8000)",
+  "IsSelected":"bool",
+  "IsIncumbant":"bool",
+  "DateCreated":"DateTime:Required",
+  "DateUpdated":"DateTime",
+  "UpdatedBy":"string"
+}

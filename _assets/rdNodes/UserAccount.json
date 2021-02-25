@@ -1,0 +1,12 @@
+{
+  "Id":"int:Key",
+  "Username":"string:Required, StringLength(32)",
+  "Password":"string:Required, StringLength(128)",
+  "EmailAddress":"string:Required, StringLength(128)",
+  "LoginCount":"int",
+  "LastLogin":"DateTime",
+  "DateCreated":"DateTime:Required",
+  "DateUpdated":"DateTime",
+  "UpdatedBy":"string:StringLength(32)",
+  "UserAccountRoles":"List<UserAccountRole>"
+}

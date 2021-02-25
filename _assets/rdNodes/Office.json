@@ -1,0 +1,9 @@
+{
+  "Id":"int:Key",
+  "Name":"string:Required, StringLength(64)",
+  "Description":"string:StringLength(2000)",
+  "DateCreated":"DateTime",
+  "DateUpdated":"DateTime",
+  "UpdatedBy":"string:StringLength(32)",
+  "Candidates":"List<Candidate>"
+}

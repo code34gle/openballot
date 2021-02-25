@@ -1,6 +1,5 @@
 C:\Projects\_briefcase\Core\open-ballot\src\OB.Data\bin\Debug\netcoreapp3.1\OB.Data.deps.json
 C:\Projects\_briefcase\Core\open-ballot\src\OB.Data\bin\Debug\netcoreapp3.1\OB.Data.dll
-C:\Projects\_briefcase\Core\open-ballot\src\OB.Data\obj\Debug\netcoreapp3.1\OB.Data.csprojAssemblyReference.cache
 C:\Projects\_briefcase\Core\open-ballot\src\OB.Data\obj\Debug\netcoreapp3.1\OB.Data.AssemblyInfoInputs.cache
 C:\Projects\_briefcase\Core\open-ballot\src\OB.Data\obj\Debug\netcoreapp3.1\OB.Data.AssemblyInfo.cs
 C:\Projects\_briefcase\Core\open-ballot\src\OB.Data\bin\Debug\netcoreapp3.1\OB.Data.pdb

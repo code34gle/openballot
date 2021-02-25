@@ -1,0 +1,5 @@
+{
+  "Id":"int:Key",
+  "RoleName":"string:Required, StringLength(32)",
+  "UserAccountRoles":"List<UserAccountRole>"
+}
