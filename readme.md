@@ -129,7 +129,7 @@ The procedures for an Election rely on the Legal statutes outlined by the consti
 
 1. All Software must be installed fresh on the **Local Clients** one month prior to an election.  The version of the software being installed must record the **code hash** before **AND AFTER** the election to prove that the machines were not tampered with. 
 
-1. All Election Machines must be connected the day before the election **AND MAINTAIN THEIR CONNECTION** throughout the election.  Any machine that loses its connection cannot be reconnected.
+1. All Election Machines must be connected the day before the election using a Private VPN **AND MUST MAINTAIN THEIR CONNECTION** throughout the election.  Any machine that loses its connection cannot be reconnected.
 
 1. The day before the election, the **Vote Servers** must be turned on and connected to the **Registration Server**.  They will go active on a specific time.
 
